@@ -5,6 +5,7 @@ body{
 
 form{
     background-color: white;
+    margin: 10px;
 }
 /* Selector de clase*/
 .color-label{
@@ -12,10 +13,26 @@ form{
 }
 
 .letra-grande{
-    font-size: x-large;
+    font-size: 50px;
 }
 
 /*Selector de ID*/
 #email{
     color:blue
+}
+
+/*Selecyot universal*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Selectores de atributo*/
+input[type="text"]{
+    background-color: olivedrab;
+}
+
+/*Selectores descendentes*/
+#contenedor{
+    width: 500px;
 }
