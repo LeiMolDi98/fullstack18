@@ -3,23 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./estilos/estilos.css"/>
+    <title>DiplomadoFormulario</title>
+    <link rel="stylesheet" href="./estilos/estilos.css"/> 
 </head>
 <body>
-    <div>
+    <div style="background-color: aqua;">
         <form action="./index.html">
-            <label for ="">First Name</label>
+            <!-- Las etiquetas se hacen con un label-->
+             <div>
+                <div>
+                    <label class="color-label letra-grande" for="">First Name*:</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label class="color-label">Last Name*:</label>
+                    <input type="text">
+                </div>
+             </div>
+             <label id="email" for="">Email Address:</label>
+             <input type="text">
+             <label for="">Query type*</label>
+             <input type="checkbox"/>General Enquiry
+             <input type="checkbox"/>Support request
+             <label for="">Message *</label>
+             <textarea name=""id=""></textarea>
+             <input type="checkbox"/> Accept
             <input type="submit"/>
-            <label for="">Last Name</label>
-            <input type = "text"/>
-            <label for="">Email*</label>
-            <input type="checkbox"/>opcion 1<input type="text">
-            <label for ="">Message</label>
-            <textarea name = "" id=""></textarea>
-            <input type="checkbox"/>acept
-            <input type = "submit"/>
-        </form>
+        </form> <!-- Etiqueta que envia los datos a x lugar-->
     </div>
 </body>
 </html>

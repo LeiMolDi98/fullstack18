@@ -1,3 +1,21 @@
+/* Selector de tipo o elemento*/
 body{
-    background-color: rgb(12, 143, 175);
+    background: #e0f1e7;;
+}
+
+form{
+    background-color: white;
+}
+/* Selector de clase*/
+.color-label{
+    color: rgb(233, 111, 11);
+}
+
+.letra-grande{
+    font-size: x-large;
+}
+
+/*Selector de ID*/
+#email{
+    color:blue
 }
