@@ -87,3 +87,131 @@ while (inicio <= 5) {
   console.log(inicio);
   inicio = inicio + 1;
 }
+
+//for es un ciclo compacto
+for (let i =1;i<=5;i++){
+  console.log("ciclo for", i);
+  console.log(`Ciclo for: ${i}`);
+}
+
+//Funcion: Alista el codigo para poderlo reutilizar
+/*
+1. Parametro y retorno
+2. parametro y sin retorno
+3. Sin parametro y retorno*/
+
+function saludar(dato){
+  console.log("hola", dato);
+}
+//invoco la funcion
+saludar ("Juan");
+saludar("Leidy");
+
+//función anonima
+let suma = function (numero1, numero2){
+  return numero1 + numero2;
+};
+console.log(suma(2,3));
+
+//Funciones de flecha y funciones anonimas
+let resta =(numero1 , numero2) =>{
+  return numero1 -numero2 ;
+}
+console.log(resta(2,4))
+
+//Funciones Nativas
+let saludo = "holaa hola";
+console.log(saludo.toUpperCase());
+
+/*
+Estructuras de datos:
+1. Arreglos o vectores o listas
+2. dicciones o map */
+
+let edades = [12,34,56,78,12]
+edades //muestra todo el arreglo
+console.log(edades[2]);
+console.log(edades);
+
+let personas =[["Leidy",26,"leimoldi"],["Andres",30,"aalfaro"]]
+console.log(personas);
+console.log(personas[1][2]);
+
+//ciclos para recorrer listas
+//map realiza un mapeo del arreglo
+edades
+edadesAux = edades.map((edad)=> edad+1)
+console.log(edadesAux);
+
+//Reduce, reduce una expredion de un arreglo
+let promedio = edades.reduce((sumatoria,edad)=>{
+  return sumatoria+edad
+},0)/edades.length
+//el 0 en la funcion me permite inicializar el acumulador o sumatoria
+console.log(promedio);
+
+let promedio1 = edades.reduce((sumatoria=0,edad)=>{
+  return sumatoria+edad
+})/edades.length
+//el 0 en la funcion me permite inicializar el acumulador o sumatoria
+console.log(promedio1);
+
+//foreach me recorre el arreglo
+edades.forEach ((edad)=>{
+  console.log("edad ->",edad)
+});
+for ( let i = 0; i < edades; i ++){
+  console.log(edades[i]);
+}
+
+// find busca en el arreglo un elemento que cumpla con x condición
+let filtroEdad = edades.find((edad)=>edad==12)
+console.log(filtroEdad);
+
+let filtroEdades = edades.find((edad)=>edad>20)
+console.log(filtroEdades);
+
+//filter, me filtra una lista pero devuelce una nueva lista
+
+letFiltroEdad2 = edades.filter ((edad)=>edad>18)
+console.log(letFiltroEdad2);
+
+//Objetos = representación de algo que es real
+/*
+let estudiante ={
+  correo: "lmmolano@gmail.com",
+  nombre: "Leidy",
+  apellido: "Molano"
+}
+estudiante.correo
+estudiante.nombre
+estudiante.apellido
+
+let usurio ={
+  correo: "jhonm@gmail.com",
+  nombreusurio: "jmendez",
+  contraseña: "123"
+}
+
+let producto= {
+  nombre :"leche",
+  precio: 5500,
+  codigo: 56789,
+  descripcion: "leche en caja"
+}*/
+
+let estudiante1 ={
+  correo: "lmmolano@gmail.com",
+  nombre: "Leidy",
+  apellido: "Molano"
+}
+
+let estudiante2 ={
+  correo: "camezquita@gmail.com",
+  nombre: "Camilo",
+  apellido: "Amezquita"
+}
+
+let estudiantes =[estudiante1,estudiante2]
+console.log(estudiantes);
+console.log(estudiantes[1]).apellido;
