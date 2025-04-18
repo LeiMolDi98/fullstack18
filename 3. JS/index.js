@@ -212,6 +212,12 @@ let estudiante2 ={
   apellido: "Amezquita"
 }
 
+let estudiante3 ={
+  correo: "mramirez@gmail.com",
+  nombre: "Maria",
+  apellido: "Ramirez"
+}
+
 let estudiantes =[estudiante1,estudiante2]
 console.log(estudiantes);
 console.log(estudiantes[1]).apellido;
